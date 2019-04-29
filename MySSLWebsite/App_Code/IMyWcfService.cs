@@ -11,4 +11,7 @@ public interface IMyWcfService
 {
     [OperationContract]
     void DoWork();
+
+    [OperationContract]
+    string ReadData();
 }
