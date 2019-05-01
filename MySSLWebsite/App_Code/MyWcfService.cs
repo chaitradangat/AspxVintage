@@ -16,8 +16,8 @@ public class MyWcfService : IMyWcfService
 
     }
 
-    public string ReadData()
+    public string ReadData(string querydata)
     {
-        return "Data";
+        return "Data: " + querydata;
     }
 }
