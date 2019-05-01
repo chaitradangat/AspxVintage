@@ -20,6 +20,11 @@ public class MyWcfService : IMyWcfService
     {
         return "Data: " + request.querydata;
     }
+
+    public string ReadDataGet()
+    {
+        return "Data";
+    }
 }
 
 [DataContract]
