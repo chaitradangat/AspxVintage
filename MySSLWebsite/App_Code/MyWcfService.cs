@@ -16,8 +16,15 @@ public class MyWcfService : IMyWcfService
 
     }
 
-    public string ReadData(string querydata)
+    public string ReadData(ServiceRequest request)
     {
-        return "Data: " + querydata;
+        return "Data: " + request.querydata;
     }
+}
+
+[DataContract]
+public class ServiceRequest
+{
+    [DataMember(EmitDefaultValue = false)]
+    public string querydata { get; set; }
 }

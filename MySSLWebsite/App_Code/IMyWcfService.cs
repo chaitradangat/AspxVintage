@@ -13,5 +13,5 @@ public interface IMyWcfService
     void DoWork();
 
     [OperationContract]
-    string ReadData(string querydata);
+    string ReadData(ServiceRequest request);
 }
