@@ -17,6 +17,6 @@ public interface IMyWcfService
     string ReadData(ServiceRequest request);
 
     [OperationContract]
-    [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json)]
+    [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json , ResponseFormat = WebMessageFormat.Json)]
     string ReadDataGet();
 }
