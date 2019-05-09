@@ -1,0 +1,5 @@
+* OpenSSL steps followed:
+* genrsa -des3 -out 192.168.0.107.key 1024
+* req -new -key 192.168.0.107.key -sha256 -out 192.168.0.107.csr
+* x509 -req -days 365 -in 192.168.0.107.csr -signkey 192.168.0.107.key -sha256 -out 192.168.0.107.crt
+* pkcs12 -export -out 192.168.0.107.pfx -inkey 192.168.0.107.key -in 192.168.0.107.crt
